@@ -1,12 +1,10 @@
-# 🚀 Automated Dockerized Deployment Script (`deploy.sh`)
+# Automated Dockerized Deployment Script (`deploy.sh`)
 
-## 📖 Overview
+## Overview
 This project provides a **production-grade Bash script** (`deploy.sh`) that automates the complete setup, deployment, and configuration of a **Dockerized application** on a remote Linux server.  
 It includes robust error handling, logging, validation, and idempotent behavior to ensure seamless re-deployment.
 
----
-
-## 🎯 Objectives
+## Objectives
 - Automatically **clone a GitHub repository**
 - Connect to a **remote server via SSH**
 - Install **Docker**, **Docker Compose**, and **Nginx**
@@ -14,26 +12,22 @@ It includes robust error handling, logging, validation, and idempotent behavior 
 - Configure **Nginx as a reverse proxy**
 - Validate and log every step of the deployment
 
----
-
-## 🧠 Key Features
-✅ Collects user parameters interactively  
-✅ Validates Git repository and branch  
-✅ Checks for Dockerfile or docker-compose.yml  
-✅ Handles remote SSH connection & package installation  
-✅ Supports both `Dockerfile` and `docker-compose.yml` builds  
-✅ Configures Nginx reverse proxy automatically  
-✅ Includes full logging and error trapping  
-✅ Can safely re-run without breaking existing setups  
-
----
+## Key Features
+Collects user parameters interactively  
+Validates Git repository and branch  
+Checks for Dockerfile or docker-compose.yml  
+Handles remote SSH connection & package installation  
+Supports both `Dockerfile` and `docker-compose.yml` builds  
+Configures Nginx reverse proxy automatically  
+Includes full logging and error trapping  
+Can safely re-run without breaking existing setups  
 
 ## ⚙️ Requirements
 
 Before running the script, ensure you have:
 
 - **Local system**
-  - Bash (Linux/macOS/WSL)
+  - Bash (ubuntu/macOS/WSL)
   - Git installed
   - SSH access to the remote server
 - **Remote server**
@@ -42,12 +36,9 @@ Before running the script, ensure you have:
 - **GitHub**
   - A valid **Personal Access Token (PAT)** with `repo` access
   - A repository containing a `Dockerfile` or `docker-compose.yml`
-
----
-
 ## 🚀 How to Use
 
-### 1️⃣ Clone this Repository
+### Clone this Repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Stuncharles/deployablescript.git
+cd deployablescript
